@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Value Group - Our Service</title>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/headerandfooter.css">
+</head>
+
+<body>
+    <!-- Top Bar with quick info -->
+    <div class="black-bg border-b border-[#d4af37]/20 py-2 text-xs tracking-wide">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span class="text-[#f5f5f5]/60">✦ EST. 1950</span>
+                <span class="text-[#f5f5f5]/60">⚲ GLOBAL PRESENCE</span>
+            </div>
+            <div class="flex space-x-4">
+                <span class="text-[#d4af37]">INVESTOR RELATIONS</span>
+                <span class="text-[#f5f5f5]/40">|</span>
+                <span class="text-[#f5f5f5]/60 hover:text-[#d4af37] cursor-pointer transition">🌐 EN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- start header -->
+    <!-- Main Header with Navigation -->
+    <header class="black-bg sticky top-0 z-50 border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 gold-bg flex items-center justify-center text-[#1a1a1b] text-2xl font-bold">
+                        RV
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold gold tracking-tight">ROYAL VALUE</div>
+                        <!-- <div class="text-[10px] tracking-[0.3em] text-[#f5f5f5]/50">GROUP OF COMPANIES</div> -->
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="./index.html" class="nav-link text-[#f5f5f5] gold">Home</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Our Story</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Businesses</a>
+                    <a href="./team.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Team</a>
+                    <a href="./service.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Service</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Sustainability</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Community</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Media</a>
+                </nav>
+                <button id="menuBtn" class="lg:hidden text-2xl text-[#f5f5f5]">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-[#1a1a1b] shadow-2xl 
+            transform -translate-x-full transition-transform duration-500 ease-in-out z-50">
+
+        <div class="flex justify-between items-center p-6 border-b border-[#d4af37]/20">
+            <span class="text-xl font-bold gold">Menu</span>
+            <button id="closeMenu" class="text-2xl text-white">&times;</button>
+        </div>
+
+        <nav class="flex flex-col space-y-6 p-6 text-lg">
+            <a href="./index.html" class="text-white hover:text-[#d4af37] transition">Home</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Our Story</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Businesses</a>
+            <a href="./team.html" class="text-white/80 hover:text-[#d4af37] transition">Team</a>
+            <a href="./service.html" class="text-white/80 hover:text-[#d4af37] transition">Service</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Sustainability</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Community</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Media</a>
+        </nav>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 invisible 
+            transition-all duration-500 z-40"></div>
+
+
+    <!-- header end -->
+
+    <!-- Team Hero Section -->
+  <section class="team-hero">
+    <div class=" max-w-4xl lg:w-1/2">
+        <div class="team-hero-pattern"></div>
+        <div class="team-hero-shape"></div>
+        <div class="team-hero-shape-2"></div>
+        
+        <div class="w-full pl-6 sm:pl-12 lg:pl-24 pr-6 py-24 relative z-10">
+          <!-- Breadcrumb -->
+          <div class="team-breadcrumb flex items-center text-sm mb-8">
+            <a href="#">Home</a>
+            <a href="#">Team</a>
+            <span class="gold">Our Leaders</span>
+          </div>
+          
+          <div class="max-w-4xl">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="w-20 h-[2px] gold-bg"></div>
+              <span class="gold tracking-[0.3em] text-sm font-medium">THE DREAM TEAM</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold team-font-serif leading-tight">
+              <span class="text-[#f5f5f5]">Meet the</span><br>
+              <span class="team-gold-gradient">Minds Behind</span><br>
+              <span class="text-[#f5f5f5]">Royal Value</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-[#f5f5f5]/80 mt-8 leading-relaxed max-w-2xl">
+              Our team of exceptional leaders and innovators brings decades of experience, passion, and dedication to deliver unparalleled value to our clients.
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="flex flex-wrap gap-8 mt-12">
+              <div>
+                <div class="text-3xl font-bold team-gold">50+</div>
+                <div class="text-sm text-[#f5f5f5]/60">Team Members</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold team-gold">15+</div>
+                <div class="text-sm text-[#f5f5f5]/60">Years Average Exp</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold team-gold">8</div>
+                <div class="text-sm text-[#f5f5f5]/60">Countries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    </div>
+  </section>
+
+  <!-- Department Filter -->
+  <section class="pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="team-filter-btn team-active">ALL EXPERTS</button>
+        <button class="team-filter-btn">LEADERSHIP</button>
+        <button class="team-filter-btn">CONSULTING</button>
+        <button class="team-filter-btn">FINANCIAL</button>
+        <button class="team-filter-btn">TECHNOLOGY</button>
+        <button class="team-filter-btn">OPERATIONS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Grid - 4 columns desktop, 3 tablet, 2 mobile -->
+  <section class="py-12 pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Leadership Row (Special Card) -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold team-font-serif mb-8 flex items-center">
+          <span class="team-gold text-4xl mr-3">✦</span> 
+          <span class="text-[#f5f5f5]">Executive <span class="team-gold">Leadership</span></span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- CEO Card - Special Leadership Card -->
+          <div class="team-card team-leadership-card">
+            <div class="team-experience">Founder & CEO</div>
+            <div class="team-corner"></div>
+            
+            <div class="team-image-container">
+              <div class="team-image team-gold-bg flex items-center justify-center text-6xl">👨‍💼</div>
+              <div class="team-image-overlay">
+                <div class="team-social-icon">in</div>
+                <div class="team-social-icon">X</div>
+                <div class="team-social-icon">@</div>
+              </div>
+            </div>
+            
+            <h3 class="team-member-name">Rajiv Mehta</h3>
+            <div class="team-designation">Chairman & CEO</div>
+            
+            <div class="team-tags">
+              <span class="team-tag">Strategy</span>
+              <span class="team-tag">Leadership</span>
+              <span class="team-tag">M&A</span>
+            </div>
+            
+            <p class="text-sm text-[#f5f5f5]/60 text-center mt-3">
+              "Building value through vision and integrity."
+            </p>
+            
+            <div class="team-quote">💬</div>
+          </div>
+          
+          <!-- Vice Chairman Card -->
+          <div class="team-card">
+            <div class="team-experience">28+ Years</div>
+            <div class="team-corner"></div>
+            
+            <div class="team-image-container">
+              <div class="team-image team-gold-bg flex items-center justify-center text-6xl">👩‍💼</div>
+              <div class="team-image-overlay">
+                <div class="team-social-icon">in</div>
+                <div class="team-social-icon">X</div>
+                <div class="team-social-icon">@</div>
+              </div>
+            </div>
+            
+            <h3 class="team-member-name">Anjali Singh</h3>
+            <div class="team-designation">Vice Chairperson</div>
+            
+            <div class="team-tags">
+              <span class="team-tag">Corporate Strategy</span>
+              <span class="team-tag">Governance</span>
+              <span class="team-tag">Innovation</span>
+            </div>
+            
+            <p class="text-sm text-[#f5f5f5]/60 text-center mt-3">
+              Former MD at McKinsey, leading transformation.
+            </p>
+            
+            <div class="team-quote">💬</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Team Grid -->
+      <h2 class="text-3xl font-bold team-font-serif mb-8">
+        <span class="text-[#f5f5f5]">Our <span class="team-gold">Experts</span></span>
+      </h2>
+      
+      <div class="grid  md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        
+        <!-- Team Member 1 -->
+        <div class="team-card">
+          <div class="team-experience">25+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👨‍🔧</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Vikram Joshi</h3>
+          <div class="team-designation">MD - Metals</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Operations</span>
+            <span class="team-tag">Sustainability</span>
+            <span class="team-tag">Global</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="team-card">
+          <div class="team-experience">20+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👩‍💻</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Priya Sharma</h3>
+          <div class="team-designation">CTO</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Technology</span>
+            <span class="team-tag">AI/ML</span>
+            <span class="team-tag">Digital</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="team-card">
+          <div class="team-experience">22+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👨‍💼</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Arun Kapoor</h3>
+          <div class="team-designation">CFO</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Finance</span>
+            <span class="team-tag">Investment</span>
+            <span class="team-tag">Risk</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="team-card">
+          <div class="team-experience">18+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👩‍⚖️</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Neha Gupta</h3>
+          <div class="team-designation">Head - Strategy</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">M&A</span>
+            <span class="team-tag">Growth</span>
+            <span class="team-tag">Innovation</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 5 -->
+        <div class="team-card">
+          <div class="team-experience">15+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👨‍🎨</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Rohan Desai</h3>
+          <div class="team-designation">Creative Director</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Design</span>
+            <span class="team-tag">Branding</span>
+            <span class="team-tag">Innovation</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 6 -->
+        <div class="team-card">
+          <div class="team-experience">17+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👩‍🔬</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Dr. Maya Iyer</h3>
+          <div class="team-designation">Head - Research</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Analytics</span>
+            <span class="team-tag">Data Science</span>
+            <span class="team-tag">Innovation</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 7 -->
+        <div class="team-card">
+          <div class="team-experience">19+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👨‍🌾</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Suresh Patel</h3>
+          <div class="team-designation">Head - Operations</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Supply Chain</span>
+            <span class="team-tag">Logistics</span>
+            <span class="team-tag">Efficiency</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+        
+        <!-- Team Member 8 -->
+        <div class="team-card">
+          <div class="team-experience">14+ Years</div>
+          <div class="team-corner"></div>
+          
+          <div class="team-image-container">
+            <div class="team-image team-gold-bg flex items-center justify-center text-5xl">👩‍💼</div>
+            <div class="team-image-overlay">
+              <div class="team-social-icon">in</div>
+              <div class="team-social-icon">X</div>
+              <div class="team-social-icon">@</div>
+            </div>
+          </div>
+          
+          <h3 class="team-member-name">Tanya Mehta</h3>
+          <div class="team-designation">HR Director</div>
+          
+          <div class="team-tags">
+            <span class="team-tag">Talent</span>
+            <span class="team-tag">Culture</span>
+            <span class="team-tag">Development</span>
+          </div>
+          
+          <div class="team-quote">💬</div>
+        </div>
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="text-center mt-16">
+        <button class="border-2 border-[#d4af37] text-[#d4af37] px-10 py-4 font-semibold tracking-wide hover:team-gold-bg hover:text-[#1a1a1b] transition-all duration-300 transform hover:scale-105">
+          VIEW ALL MEMBERS
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Stats Section -->
+  <section class="team-black-bg py-20 border-y border-[#d4af37]/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div class="team-stat-card">
+          <div class="text-4xl md:text-5xl font-bold team-gold mb-2">50+</div>
+          <div class="text-sm text-[#f5f5f5]/60">Team Members</div>
+        </div>
+        <div class="team-stat-card">
+          <div class="text-4xl md:text-5xl font-bold team-gold mb-2">15+</div>
+          <div class="text-sm text-[#f5f5f5]/60">Years Experience</div>
+        </div>
+        <div class="team-stat-card">
+          <div class="text-4xl md:text-5xl font-bold team-gold mb-2">8</div>
+          <div class="text-sm text-[#f5f5f5]/60">Countries</div>
+        </div>
+        <div class="team-stat-card">
+          <div class="text-4xl md:text-5xl font-bold team-gold mb-2">100+</div>
+          <div class="text-sm text-[#f5f5f5]/60">Projects Delivered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#f5f5f5]">
+                Ready to Get <span class="gold">Started?</span>
+            </h2>
+            <p class="text-lg text-[#f5f5f5]/70 mt-6 max-w-2xl mx-auto">
+                Let's discuss how our services can help you achieve your business goals and create lasting value.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center mt-10">
+                <button
+                    class="gold-bg text-[#1a1a1b] px-10 py-4 font-bold tracking-wide hover:shadow-xl hover:shadow-[#d4af37]/20 transition-all duration-300 transform hover:scale-105">
+                    SCHEDULE CONSULTATION
+                </button>
+                <button
+                    class="border-2 border-[#d4af37] text-[#d4af37] px-10 py-4 font-bold tracking-wide hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all duration-300 transform hover:scale-105">
+                    CONTACT US
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1b] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 gold-bg flex items-center justify-center text-[#1a1a1b] font-bold">RV
+                        </div>
+                        <span class="text-xl font-bold gold">ROYAL VALUE</span>
+                    </div>
+                    <p class="text-[#f5f5f5]/60 text-sm leading-relaxed">
+                        For over seven decades, we've built more than businesses — we've cultivated enduring
+                        relationships, empowered communities, and shaped industries.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            in</div>
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            X</div>
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            YT</div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Our Story</a></li>
+                        <li><a href="#" class="footer-link">Leadership</a></li>
+                        <li><a href="#" class="footer-link">Businesses</a></li>
+                        <li><a href="#" class="footer-link">Sustainability</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Media</a></li>
+                        <li><a href="#" class="footer-link">Podcasts</a></li>
+                        <li><a href="#" class="footer-link">Reports</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Use</a></li>
+                        <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                        <li><a href="#" class="footer-link">Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="border-t border-[#d4af37]/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <div class="text-[#f5f5f5]/40 order-2 md:order-1">
+                    © 2025 Royal Value Group. All rights reserved.
+                </div>
+                <div class="flex space-x-6 order-1 md:order-2 mb-4 md:mb-0">
+                    <span class="text-[#f5f5f5]/40 text-xs">✦ FORGING EXCELLENCE</span>
+                    <span class="text-[#f5f5f5]/20">|</span>
+                    <span class="text-[#f5f5f5]/40 text-xs">✦ SINCE 1950</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Value Group - Our Service</title>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/headerandfooter.css">
+</head>
+
+<body>
+    <!-- Top Bar with quick info -->
+    <div class="black-bg border-b border-[#d4af37]/20 py-2 text-xs tracking-wide">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span class="text-[#f5f5f5]/60">✦ EST. 1950</span>
+                <span class="text-[#f5f5f5]/60">⚲ GLOBAL PRESENCE</span>
+            </div>
+            <div class="flex space-x-4">
+                <span class="text-[#d4af37]">INVESTOR RELATIONS</span>
+                <span class="text-[#f5f5f5]/40">|</span>
+                <span class="text-[#f5f5f5]/60 hover:text-[#d4af37] cursor-pointer transition">🌐 EN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- start header -->
+    <!-- Main Header with Navigation -->
+    <header class="black-bg sticky top-0 z-50 border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 gold-bg flex items-center justify-center text-[#1a1a1b] text-2xl font-bold">
+                        RV
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold gold tracking-tight">ROYAL VALUE</div>
+                        <!-- <div class="text-[10px] tracking-[0.3em] text-[#f5f5f5]/50">GROUP OF COMPANIES</div> -->
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="./index.html" class="nav-link text-[#f5f5f5] gold">Home</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Our Story</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Businesses</a>
+                    <a href="./team.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Team</a>
+                    <a href="./service.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Service</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Sustainability</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Community</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Media</a>
+                </nav>
+                <button id="menuBtn" class="lg:hidden text-2xl text-[#f5f5f5]">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-[#1a1a1b] shadow-2xl 
+            transform -translate-x-full transition-transform duration-500 ease-in-out z-50">
+
+        <div class="flex justify-between items-center p-6 border-b border-[#d4af37]/20">
+            <span class="text-xl font-bold gold">Menu</span>
+            <button id="closeMenu" class="text-2xl text-white">&times;</button>
+        </div>
+
+        <nav class="flex flex-col space-y-6 p-6 text-lg">
+            <a href="./index.html" class="text-white hover:text-[#d4af37] transition">Home</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Our Story</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Businesses</a>
+            <a href="./team.html" class="text-white/80 hover:text-[#d4af37] transition">Team</a>
+            <a href="./service.html" class="text-white/80 hover:text-[#d4af37] transition">Service</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Sustainability</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Community</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Media</a>
+        </nav>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 invisible 
+            transition-all duration-500 z-40"></div>
+
+
+    <!-- header end -->
+
+    <!-- Hero Banner Section -->
+    <section class="hero-section relative">
+        <div class="hero-pattern"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative z-10">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb flex items-center space-x-2 text-sm mb-8">
+                <a href="#" class="hover:gold">Home</a>
+                <a href="#" class="hover:gold">Services</a>
+                <span class="text-[#d4af37]">All Services</span>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-16 h-[2px] gold-bg"></div>
+                        <span class="text-[#d4af37] tracking-[0.3em] text-sm font-medium">PREMIUM SERVICES</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight">
+                        <span class="text-[#f5f5f5]">Excellence in</span><br>
+                        <span class="gold-gradient">Every Service</span>
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-[#f5f5f5]/80 mt-8 leading-relaxed max-w-xl">
+                        From consulting to implementation, we deliver unparalleled value through our comprehensive range
+                        of premium services tailored to your success.
+                    </p>
+
+                    <!-- Stats Row -->
+                    <div class="grid grid-cols-3 gap-4 mt-12">
+                        <div>
+                            <div class="text-3xl font-bold gold">150+</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Expert Team</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold gold">98%</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Success Rate</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold gold">24/7</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Support</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-6 mt-12">
+                        <button
+                            class="gold-bg text-[#1a1a1b] px-8 py-4 text-sm font-bold tracking-wider hover:shadow-xl hover:shadow-[#d4af37]/20 transition-all duration-300 transform hover:scale-105">
+                            EXPLORE ALL SERVICES
+                        </button>
+                        <button
+                            class="border-2 border-[#d4af37] px-8 py-4 text-sm font-bold tracking-wider text-[#f5f5f5] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all duration-300 transform hover:scale-105">
+                            CONSULT NOW
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Content - Feature Card -->
+                <div class="relative hidden lg:block">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#d4af37]/20 to-transparent blur-3xl"></div>
+                    <div class="relative black-bg p-8 border border-[#d4af37]/30">
+                        <div
+                            class="absolute -top-4 -right-4 w-16 h-16 gold-bg flex items-center justify-center text-[#1a1a1b] text-2xl font-bold">
+                            ✦
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="text-6xl">💎</div>
+                            <div>
+                                <h3 class="text-2xl font-serif font-bold gold">Premium Service Guarantee</h3>
+                                <p class="text-[#f5f5f5]/70 mt-2 text-sm leading-relaxed">
+                                    Every service comes with our 100% satisfaction guarantee and dedicated account
+                                    manager.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-[#d4af37]">✓</span>
+                                <span class="text-sm text-[#f5f5f5]/70">Dedicated support team</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-[#d4af37]">✓</span>
+                                <span class="text-sm text-[#f5f5f5]/70">Customized solutions</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-[#d4af37]">✓</span>
+                                <span class="text-sm text-[#f5f5f5]/70">Regular progress reports</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block">
+            <div class="flex flex-col items-center">
+                <span class="text-xs tracking-widest text-[#f5f5f5]/40 mb-2">SCROLL</span>
+                <div class="w-[2px] h-12 gold-bg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 relative">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#d4af37]/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#d4af37]/5 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-[#d4af37] text-sm tracking-[0.3em]">WHAT WE OFFER</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mt-4 text-[#f5f5f5]">
+                    Comprehensive <span class="gold">Service Portfolio</span>
+                </h2>
+                <p class="text-lg text-[#f5f5f5]/70 mt-6">
+                    Discover our range of premium services designed to deliver exceptional value and drive your success
+                    forward.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-btn active">All Services</button>
+                <button class="filter-btn">Consulting</button>
+                <button class="filter-btn">Financial</button>
+                <button class="filter-btn">Technology</button>
+                <button class="filter-btn">Operations</button>
+            </div>
+
+            <!-- Services Grid - 4 columns on desktop, 3 on tablet, 2 on mobile -->
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+
+                <!-- Service 1 - Strategic Consulting -->
+                <div  class="service-card group">
+                    <div class="service-number">01</div>
+                    <div class="service-icon mx-auto">
+                        <span>📊</span>
+                    </div>
+                    <h3 class="service-title text-center">Strategic Consulting</h3>
+                    <p class="service-description text-center text-sm">
+                        Expert guidance for business transformation and growth strategy development.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 - Financial Advisory -->
+                <div class="service-card group">
+                    <div class="service-number">02</div>
+                    <div class="service-icon mx-auto">
+                        <span>💰</span>
+                    </div>
+                    <h3 class="service-title text-center">Financial Advisory</h3>
+                    <p class="service-description text-center text-sm">
+                        Comprehensive financial planning, investment advice, and wealth management.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 - Market Research -->
+                <div class="service-card group">
+                    <div class="service-number">03</div>
+                    <div class="service-icon mx-auto">
+                        <span>🔍</span>
+                    </div>
+                    <h3 class="service-title text-center">Market Research</h3>
+                    <p class="service-description text-center text-sm">
+                        Deep industry insights and data-driven market analysis for informed decisions.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 - Digital Transformation -->
+                <div class="service-card group">
+                    <div class="service-number">04</div>
+                    <div class="service-icon mx-auto">
+                        <span>💻</span>
+                    </div>
+                    <h3 class="service-title text-center">Digital Transformation</h3>
+                    <p class="service-description text-center text-sm">
+                        End-to-end digital solutions to modernize operations and enhance efficiency.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 - Risk Management -->
+                <div class="service-card group">
+                    <div class="service-number">05</div>
+                    <div class="service-icon mx-auto">
+                        <span>🛡️</span>
+                    </div>
+                    <h3 class="service-title text-center">Risk Management</h3>
+                    <p class="service-description text-center text-sm">
+                        Identify, assess, and mitigate business risks with our comprehensive frameworks.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 - HR Consulting -->
+                <div class="service-card group">
+                    <div class="service-number">06</div>
+                    <div class="service-icon mx-auto">
+                        <span>👥</span>
+                    </div>
+                    <h3 class="service-title text-center">HR Consulting</h3>
+                    <p class="service-description text-center text-sm">
+                        Talent acquisition, organizational development, and HR strategy optimization.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 7 - Legal Advisory -->
+                <div class="service-card group">
+                    <div class="service-number">07</div>
+                    <div class="service-icon mx-auto">
+                        <span>⚖️</span>
+                    </div>
+                    <h3 class="service-title text-center">Legal Advisory</h3>
+                    <p class="service-description text-center text-sm">
+                        Expert legal guidance on corporate law, compliance, and regulatory matters.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 8 - Supply Chain -->
+                <div class="service-card group">
+                    <div class="service-number">08</div>
+                    <div class="service-icon mx-auto">
+                        <span>📦</span>
+                    </div>
+                    <h3 class="service-title text-center">Supply Chain</h3>
+                    <p class="service-description text-center text-sm">
+                        Optimize logistics, reduce costs, and improve efficiency in your supply chain.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 9 - IT Infrastructure -->
+                <div class="service-card group">
+                    <div class="service-number">09</div>
+                    <div class="service-icon mx-auto">
+                        <span>⚙️</span>
+                    </div>
+                    <h3 class="service-title text-center">IT Infrastructure</h3>
+                    <p class="service-description text-center text-sm">
+                        Robust and scalable IT solutions for modern business requirements.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 10 - Training & Development -->
+                <div class="service-card group">
+                    <div class="service-number">10</div>
+                    <div class="service-icon mx-auto">
+                        <span>📚</span>
+                    </div>
+                    <h3 class="service-title text-center">Training & Development</h3>
+                    <p class="service-description text-center text-sm">
+                        Customized learning programs to upskill teams and drive performance.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 11 - Sustainability -->
+                <div class="service-card group">
+                    <div class="service-number">11</div>
+                    <div class="service-icon mx-auto">
+                        <span>🌱</span>
+                    </div>
+                    <h3 class="service-title text-center">Sustainability</h3>
+                    <p class="service-description text-center text-sm">
+                        ESG strategy, carbon footprint reduction, and sustainable business practices.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Service 12 - M&A Advisory -->
+                <div class="service-card group">
+                    <div class="service-number">12</div>
+                    <div class="service-icon mx-auto">
+                        <span>🤝</span>
+                    </div>
+                    <h3 class="service-title text-center">M&A Advisory</h3>
+                    <p class="service-description text-center text-sm">
+                        End-to-end support for mergers, acquisitions, and partnership deals.
+                    </p>
+                    <div class="learn-more">
+                        Learn More <span>→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-16">
+                <button
+                    class="border-2 border-[#d4af37] text-[#d4af37] px-10 py-4 font-semibold tracking-wide hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all duration-300 transform hover:scale-105">
+                    LOAD MORE SERVICES
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Stats Section -->
+    <section class="black-bg py-20 border-y border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-[#f5f5f5]">
+                    Why Clients Choose <span class="gold">Royal Value</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="stat-card">
+                    <div class="text-3xl md:text-4xl font-bold gold mb-2">500+</div>
+                    <div class="text-sm text-[#f5f5f5]/60">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl md:text-4xl font-bold gold mb-2">98%</div>
+                    <div class="text-sm text-[#f5f5f5]/60">Retention Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl md:text-4xl font-bold gold mb-2">15+</div>
+                    <div class="text-sm text-[#f5f5f5]/60">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl md:text-4xl font-bold gold mb-2">24/7</div>
+                    <div class="text-sm text-[#f5f5f5]/60">Premium Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#f5f5f5]">
+                Ready to Get <span class="gold">Started?</span>
+            </h2>
+            <p class="text-lg text-[#f5f5f5]/70 mt-6 max-w-2xl mx-auto">
+                Let's discuss how our services can help you achieve your business goals and create lasting value.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center mt-10">
+                <button
+                    class="gold-bg text-[#1a1a1b] px-10 py-4 font-bold tracking-wide hover:shadow-xl hover:shadow-[#d4af37]/20 transition-all duration-300 transform hover:scale-105">
+                    SCHEDULE CONSULTATION
+                </button>
+                <button
+                    class="border-2 border-[#d4af37] text-[#d4af37] px-10 py-4 font-bold tracking-wide hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all duration-300 transform hover:scale-105">
+                    CONTACT US
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1b] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 gold-bg flex items-center justify-center text-[#1a1a1b] font-bold">RV
+                        </div>
+                        <span class="text-xl font-bold gold">ROYAL VALUE</span>
+                    </div>
+                    <p class="text-[#f5f5f5]/60 text-sm leading-relaxed">
+                        For over seven decades, we've built more than businesses — we've cultivated enduring
+                        relationships, empowered communities, and shaped industries.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            in</div>
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            X</div>
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            YT</div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Our Story</a></li>
+                        <li><a href="#" class="footer-link">Leadership</a></li>
+                        <li><a href="#" class="footer-link">Businesses</a></li>
+                        <li><a href="#" class="footer-link">Sustainability</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Media</a></li>
+                        <li><a href="#" class="footer-link">Podcasts</a></li>
+                        <li><a href="#" class="footer-link">Reports</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Use</a></li>
+                        <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                        <li><a href="#" class="footer-link">Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="border-t border-[#d4af37]/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <div class="text-[#f5f5f5]/40 order-2 md:order-1">
+                    © 2025 Royal Value Group. All rights reserved.
+                </div>
+                <div class="flex space-x-6 order-1 md:order-2 mb-4 md:mb-0">
+                    <span class="text-[#f5f5f5]/40 text-xs">✦ FORGING EXCELLENCE</span>
+                    <span class="text-[#f5f5f5]/20">|</span>
+                    <span class="text-[#f5f5f5]/40 text-xs">✦ SINCE 1950</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

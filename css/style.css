@@ -1,0 +1,840 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #002366;
+        color: #f5f5f5;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-serif {
+        font-family: 'Cormorant Garamond', serif;
+    }
+
+    .gold {
+        color: #d4af37;
+    }
+
+    .gold-bg {
+        background-color: #d4af37;
+    }
+
+    .gold-border {
+        border-color: #d4af37;
+    }
+
+    .navy-bg {
+        background-color: #002366;
+    }
+
+    .black-bg {
+        background-color: #1a1a1b;
+    }
+
+    .offwhite {
+        color: #f5f5f5;
+    }
+
+    .offwhite-bg {
+        background-color: #f5f5f5;
+    }
+
+    .hover-gold:hover {
+        color: #d4af37 !important;
+        transition: all 0.3s ease;
+    }
+
+   
+    .gold-gradient {
+        background: linear-gradient(135deg, #d4af37 0%, #f5e7b2 50%, #d4af37 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.3);
+    }
+
+    .hero-pattern {
+        position: relative;
+    }
+
+    .hero-pattern::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+        pointer-events: none;
+    }
+
+    .stats-card {
+        border-left: 3px solid #d4af37;
+    }
+
+   
+
+    /* service page css */
+    /* Hero Section Styles */
+    .hero-section {
+      position: relative;
+      background: linear-gradient(135deg, #002366 0%, #001845 100%);
+      overflow: hidden;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 80%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+      transform: rotate(20deg);
+    }
+    
+    .hero-section::after {
+      content: '✦';
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 150px;
+      color: rgba(212, 175, 55, 0.03);
+      font-family: serif;
+    }
+    
+    .hero-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(45deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    
+    /* Service Card Hover Effects */
+    .service-card {
+      position: relative;
+      background: #1a1a1b;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 2rem;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+      transition: left 0.6s ease;
+      z-index: -1;
+    }
+    
+    .service-card:hover::before {
+      left: 100%;
+    }
+    
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 50px;
+      border-color: transparent transparent rgba(212, 175, 55, 0.2) transparent;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .service-card:hover::after {
+      opacity: 1;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      border-color: #d4af37;
+      box-shadow: 
+        0 20px 40px -15px rgba(212, 175, 55, 0.4),
+        0 0 0 2px rgba(212, 175, 55, 0.1) inset;
+    }
+    
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 2px solid #d4af37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      transition: all 0.4s ease;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .service-card:hover .service-icon {
+      background: #d4af37;
+      color: #1a1a1b;
+      transform: rotate(360deg) scale(1.1);
+      box-shadow: 0 0 20px #d4af37;
+    }
+    
+    .service-number {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: rgba(212, 175, 55, 0.1);
+      transition: all 0.3s ease;
+      font-family: 'Cormorant Garamond', serif;
+    }
+    
+    .service-card:hover .service-number {
+      color: rgba(212, 175, 55, 0.3);
+      transform: scale(1.2);
+    }
+    
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1rem 0 0.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .service-title::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #d4af37;
+      transition: width 0.3s ease;
+    }
+    
+    .service-card:hover .service-title::after {
+      width: 100%;
+    }
+    
+    .service-card:hover .service-title {
+      color: #d4af37;
+      transform: translateX(5px);
+    }
+    
+    .service-description {
+      color: #f5f5f5;
+      opacity: 0.7;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover .service-description {
+      opacity: 1;
+    }
+    
+    .learn-more {
+      display: inline-flex;
+      align-items: center;
+      color: #d4af37;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover .learn-more {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    .learn-more span {
+      margin-left: 5px;
+      transition: transform 0.3s ease;
+    }
+    
+    .learn-more:hover span {
+      transform: translateX(5px);
+    }
+    
+    /* Stats Card Style */
+    .stat-card {
+      background: rgba(26, 26, 27, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .stat-card:hover {
+      border-color: #d4af37;
+      transform: translateY(-5px);
+    }
+    
+    /* Gradient Text */
+    .gold-gradient {
+      background: linear-gradient(135deg, #d4af37 0%, #f5e7b2 50%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb a {
+      position: relative;
+      color: #f5f5f5;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+    
+    .breadcrumb a:hover {
+      opacity: 1;
+      color: #d4af37;
+    }
+    
+    .breadcrumb a::after {
+      content: '/';
+      margin-left: 8px;
+      color: #d4af37;
+      opacity: 0.5;
+    }
+    
+    .breadcrumb a:last-child::after {
+      display: none;
+    }
+    
+    /* Filter Buttons */
+    .filter-btn {
+      padding: 0.5rem 1.5rem;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      background: transparent;
+      color: #f5f5f5;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #d4af37;
+      border-color: #d4af37;
+      color: #1a1a1b;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .service-card {
+        padding: 1.5rem;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+      }
+    }
+
+
+
+    /* team page css */
+    /* Hero Section Styles */
+    .team-hero {
+      position: relative;
+      background: linear-gradient(135deg, #002366 0%, #001845 100%);
+      overflow: hidden;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .team-hero-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.03) 0px, rgba(212, 175, 55, 0.03) 2px, transparent 2px, transparent 10px);
+      pointer-events: none;
+    }
+    
+    .team-hero-shape {
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    
+    .team-hero-shape-2 {
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    
+    /* Breadcrumb */
+    .team-breadcrumb a {
+      position: relative;
+      color: #f5f5f5;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .team-breadcrumb a:hover {
+      opacity: 1;
+      color: #d4af37;
+    }
+    
+    .team-breadcrumb a::after {
+      content: '/';
+      margin: 0 8px;
+      color: #d4af37;
+      opacity: 0.5;
+    }
+    
+    .team-breadcrumb a:last-child::after {
+      display: none;
+    }
+    
+    /* Team Card Main Styles */
+    .team-card {
+      position: relative;
+      background: #1a1a1b;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 8px;
+      padding: 1.5rem 1.5rem 2rem;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      z-index: 1;
+      cursor: pointer;
+    }
+    
+    /* Card Background Glow Effect */
+    .team-card::before {
+      content: '';
+      position: absolute;
+      top: var(--y, 50%);
+      left: var(--x, 50%);
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(212, 175, 55, 0.3), transparent 70%);
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    .team-card:hover::before {
+      opacity: 1;
+    }
+    
+    /* Corner Accents */
+    .team-card::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 2px solid #d4af37;
+      border-right: 2px solid #d4af37;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .team-card:hover::after {
+      opacity: 1;
+      top: 15px;
+      right: 15px;
+    }
+    
+    /* Bottom Left Corner */
+    .team-card .team-corner {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-bottom: 2px solid #d4af37;
+      border-left: 2px solid #d4af37;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .team-card:hover .team-corner {
+      opacity: 1;
+      bottom: 15px;
+      left: 15px;
+    }
+    
+    /* Image Container */
+    .team-image-container {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid rgba(212, 175, 55, 0.3);
+      transition: all 0.4s ease;
+    }
+    
+    .team-card:hover .team-image-container {
+      border-color: #d4af37;
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+    }
+    
+    .team-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    
+    .team-card:hover .team-image {
+      transform: scale(1.15);
+    }
+    
+    /* Image Overlay with Social Icons */
+    .team-image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(212, 175, 55, 0.9), transparent);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 20px;
+      gap: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .team-card:hover .team-image-overlay {
+      opacity: 1;
+    }
+    
+    .team-social-icon {
+      width: 35px;
+      height: 35px;
+      background: #1a1a1b;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d4af37;
+      font-size: 0.9rem;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+    
+    .team-card:hover .team-social-icon {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .team-social-icon:nth-child(1) { transition-delay: 0.1s; }
+    .team-social-icon:nth-child(2) { transition-delay: 0.2s; }
+    .team-social-icon:nth-child(3) { transition-delay: 0.3s; }
+    
+    .team-social-icon:hover {
+      background: #d4af37;
+      color: #1a1a1b;
+      transform: translateY(-3px) scale(1.1);
+    }
+    
+    /* Member Name */
+    .team-member-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: 'Cormorant Garamond', serif;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    .team-member-name::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: #d4af37;
+      transition: width 0.3s ease;
+    }
+    
+    .team-card:hover .team-member-name::after {
+      width: 50px;
+    }
+    
+    .team-card:hover .team-member-name {
+      color: #d4af37;
+      letter-spacing: 1px;
+    }
+    
+    /* Designation */
+    .team-designation {
+      text-align: center;
+      color: #d4af37;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      transition: all 0.3s ease;
+    }
+    
+    /* Expertise Tags */
+    .team-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    
+    .team-tag {
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      color: #f5f5f5;
+      transition: all 0.3s ease;
+    }
+    
+    .team-card:hover .team-tag {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: #d4af37;
+      transform: scale(1.05);
+    }
+    
+    /* Experience Badge */
+    .team-experience {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #d4af37;
+      color: #1a1a1b;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      z-index: 10;
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    }
+    
+    .team-card:hover .team-experience {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    /* Quote Badge */
+    .team-quote {
+      position: absolute;
+      bottom: 70px;
+      right: 20px;
+      background: #1a1a1b;
+      border: 2px solid #d4af37;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d4af37;
+      font-size: 1.2rem;
+      opacity: 0;
+      transform: scale(0.5);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      z-index: 10;
+    }
+    
+    .team-card:hover .team-quote {
+      opacity: 1;
+      transform: scale(1);
+      transition-delay: 0.2s;
+    }
+    
+    .team-quote:hover {
+      background: #d4af37;
+      color: #1a1a1b;
+      transform: scale(1.2) rotate(360deg);
+    }
+    
+    /* Department Filter Buttons */
+    .team-filter-btn {
+      padding: 0.75rem 2rem;
+      background: transparent;
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      color: #f5f5f5;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .team-filter-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #d4af37;
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
+    
+    .team-filter-btn:hover::before,
+    .team-filter-btn.team-active::before {
+      left: 0;
+    }
+    
+    .team-filter-btn:hover,
+    .team-filter-btn.team-active {
+      color: #1a1a1b;
+      border-color: #d4af37;
+    }
+    
+    /* Stats Card */
+    .team-stat-card {
+      background: rgba(26, 26, 27, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .team-stat-card:hover {
+      border-color: #d4af37;
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px -10px rgba(212, 175, 55, 0.3);
+    }
+    
+    /* Leadership Card Special */
+    .team-leadership-card {
+      background: linear-gradient(135deg, #1a1a1b 0%, #002366 100%);
+      border: 2px solid #d4af37;
+      position: relative;
+    }
+    
+    .team-leadership-card::before {
+      content: '✦';
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 4rem;
+      color: rgba(212, 175, 55, 0.1);
+      font-family: serif;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .team-image-container {
+        width: 140px;
+        height: 140px;
+      }
+      
+      .team-member-name {
+        font-size: 1.3rem;
+      }
+      
+      .team-experience {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+      }
+    }
+    
+    /* Gradient Text */
+    .team-gold-gradient {
+      background: linear-gradient(135deg, #d4af37 0%, #f5e7b2 50%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    /* Animation for cards */
+    @keyframes team-fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .team-card {
+      animation: team-fadeInUp 0.6s ease forwards;
+    }
+    
+    .team-card:nth-child(1) { animation-delay: 0.1s; }
+    .team-card:nth-child(2) { animation-delay: 0.2s; }
+    .team-card:nth-child(3) { animation-delay: 0.3s; }
+    .team-card:nth-child(4) { animation-delay: 0.4s; }
+    .team-card:nth-child(5) { animation-delay: 0.5s; }
+    .team-card:nth-child(6) { animation-delay: 0.6s; }
+    .team-card:nth-child(7) { animation-delay: 0.7s; }
+    .team-card:nth-child(8) { animation-delay: 0.8s; }

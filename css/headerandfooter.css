@@ -1,0 +1,35 @@
+ .nav-link {
+     position: relative;
+     font-weight: 500;
+     font-size: 0.95rem;
+     letter-spacing: 0.5px;
+     padding-bottom: 4px;
+ }
+
+ .nav-link::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #d4af37;
+     transition: width 0.3s ease;
+ }
+
+ .nav-link:hover::after {
+     width: 100%;
+ }
+
+
+ .footer-link {
+     color: #f5f5f5;
+     opacity: 0.7;
+     transition: opacity 0.3s ease, color 0.3s ease;
+     font-size: 0.95rem;
+ }
+
+ .footer-link:hover {
+     opacity: 1;
+     color: #d4af37;
+ }
