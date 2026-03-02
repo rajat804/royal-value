@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Value Group - Our Story</title>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/headerandfooter.css">
+</head>
+
+<body>
+    <!-- Top Bar with quick info -->
+    <div class="black-bg border-b border-[#d4af37]/20 py-2 text-xs tracking-wide">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span class="text-[#f5f5f5]/60">✦ EST. 1950</span>
+                <span class="text-[#f5f5f5]/60">⚲ GLOBAL PRESENCE</span>
+            </div>
+            <div class="flex space-x-4">
+                <span class="text-[#d4af37]">INVESTOR RELATIONS</span>
+                <span class="text-[#f5f5f5]/40">|</span>
+                <span class="text-[#f5f5f5]/60 hover:text-[#d4af37] cursor-pointer transition">🌐 EN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- start header -->
+    <!-- Main Header with Navigation -->
+    <header class="black-bg sticky top-0 z-50 border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 gold-bg flex items-center justify-center text-[#1a1a1b] text-2xl font-bold">
+                        RV
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold gold tracking-tight">ROYAL VALUE</div>
+                        <!-- <div class="text-[10px] tracking-[0.3em] text-[#f5f5f5]/50">GROUP OF COMPANIES</div> -->
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="./index.html" class="nav-link text-[#f5f5f5] gold">Home</a>
+                    <a href="./ourStory.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Our Story</a>
+                    <a href="./business.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Businesses</a>
+                    <a href="./team.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Team</a>
+                    <a href="./service.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Service</a>
+                    <a href="#" class="nav-link text-[#f5f5f5]/80 hover-gold">Sustainability</a>
+                    <a href="./community.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Community</a>
+                    <a href="./media.html" class="nav-link text-[#f5f5f5]/80 hover-gold">Media</a>
+                </nav>
+                <button id="menuBtn" class="lg:hidden text-2xl text-[#f5f5f5]">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-[#1a1a1b] shadow-2xl 
+            transform -translate-x-full transition-transform duration-500 ease-in-out z-50">
+
+        <div class="flex justify-between items-center p-6 border-b border-[#d4af37]/20">
+            <span class="text-xl font-bold gold">Menu</span>
+            <button id="closeMenu" class="text-2xl text-white">&times;</button>
+        </div>
+
+        <nav class="flex flex-col space-y-6 p-6 text-lg">
+            <a href="./index.html" class="text-white hover:text-[#d4af37] transition">Home</a>
+            <a href="./ourStory.html" class="text-white/80 hover:text-[#d4af37] transition">Our Story</a>
+            <a href="./business" class="text-white/80 hover:text-[#d4af37] transition">Businesses</a>
+            <a href="./team.html" class="text-white/80 hover:text-[#d4af37] transition">Team</a>
+            <a href="./service.html" class="text-white/80 hover:text-[#d4af37] transition">Service</a>
+            <a href="#" class="text-white/80 hover:text-[#d4af37] transition">Sustainability</a>
+            <a href="./community.html" class="text-white/80 hover:text-[#d4af37] transition">Community</a>
+            <a href="./media.html" class="text-white/80 hover:text-[#d4af37] transition">Media</a>
+        </nav>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 invisible 
+            transition-all duration-500 z-40"></div>
+    <!-- header end -->
+
+    
+    <!-- Hero Section -->
+  <section class="our-story-hero">
+    <div class="our-story-hero-pattern"></div>
+    <div class="our-story-hero-shape"></div>
+    <div class="our-story-hero-shape-2"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="our-story-fade-in">
+          <div class="our-story-breadcrumb flex items-center text-sm mb-6">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <span class="gold">Our Story</span>
+          </div>
+          
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-20 h-[2px] gold-bg"></div>
+            <span class="gold tracking-[0.3em] text-sm font-medium">SINCE 1950</span>
+          </div>
+          
+          <h1 class="text-5xl md:text-7xl font-bold our-story-font-serif leading-tight">
+            <span class="text-white">The</span><br>
+            <span class="gold-gradient">Royal Value</span><br>
+            <span class="text-white">of Excellence</span>
+          </h1>
+          
+          <p class="text-lg md:text-xl text-white/80 mt-8 leading-relaxed">
+            Seven decades of unwavering commitment to quality, integrity, and innovation. Our journey from a small trading house to a global conglomerate.
+          </p>
+          
+          <!-- Quick Stats -->
+          <div class="flex flex-wrap gap-8 mt-12">
+            <div>
+              <div class="text-3xl font-bold gold">75+</div>
+              <div class="text-sm text-white/60">Years of Legacy</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold gold">40+</div>
+              <div class="text-sm text-white/60">Countries</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold gold">50K+</div>
+              <div class="text-sm text-white/60">Employees</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Content - Featured Quote -->
+        <div class="our-story-fade-in our-story-delay-2">
+          <div class="our-story-quote-card rounded-2xl relative">
+            <div class="relative z-10">
+              <p class="text-2xl md:text-3xl font-serif italic text-white/90 leading-relaxed">
+                "What began as a dream in 1950 has grown into a legacy built on trust, excellence, and an unwavering commitment to value creation."
+              </p>
+              <div class="flex items-center mt-8">
+                <div class="w-16 h-16 rounded-full gold-bg flex items-center justify-center text-2xl font-bold text-[#1a1a1b] mr-4">
+                  RK
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-white">Rajiv Mehta</h4>
+                  <p class="text-sm gold">Founder's Son & Chairman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Trust Badges -->
+          <div class="flex items-center justify-start gap-6 mt-8">
+            <div class="flex items-center gap-2">
+              <span class="gold text-xl">✦</span>
+              <span class="text-xs text-white/60">ISO Certified</span>
+            </div>
+            <div class="w-px h-4 gold-bg/30"></div>
+            <div class="flex items-center gap-2">
+              <span class="gold text-xl">🏆</span>
+              <span class="text-xs text-white/60">Global Excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden lg:block">
+      <div class="flex flex-col items-center">
+        <span class="text-xs tracking-widest text-white/40 mb-2">OUR JOURNEY</span>
+        <div class="w-[2px] h-12 gold-bg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="py-24 black-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="gold text-sm tracking-[0.3em]">THROUGH THE YEARS</span>
+        <h2 class="text-4xl md:text-5xl font-bold our-story-font-serif mt-4 text-white">
+          Our <span class="gold">Journey</span> of Excellence
+        </h2>
+        <p class="text-lg text-white/70 mt-6 max-w-2xl mx-auto">
+          From humble beginnings to global recognition - every milestone shaped who we are today.
+        </p>
+      </div>
+      
+      <!-- Timeline -->
+      <div class="our-story-timeline relative py-10">
+        
+        <!-- Item 1 - 1950 -->
+        <div class="our-story-timeline-item our-story-fade-in">
+          <div class="our-story-timeline-dot"></div>
+          <div class="our-story-timeline-content">
+            <div class="our-story-timeline-year">1950</div>
+            <h3 class="text-2xl font-bold gold mb-2">The Humble Beginning</h3>
+            <p class="text-white/70">Founded as a small textile trading house in Mumbai with just 3 employees and a vision for quality.</p>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Textiles</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Trading</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 2 - 1975 -->
+        <div class="our-story-timeline-item our-story-fade-in our-story-delay-1">
+          <div class="our-story-timeline-dot"></div>
+          <div class="our-story-timeline-content">
+            <div class="our-story-timeline-year">1975</div>
+            <h3 class="text-2xl font-bold gold mb-2">First Expansion</h3>
+            <p class="text-white/70">Expanded into manufacturing with our first textile mill. Employee count grew to 500+.</p>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Manufacturing</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Expansion</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 3 - 1990 -->
+        <div class="our-story-timeline-item our-story-fade-in our-story-delay-2">
+          <div class="our-story-timeline-dot"></div>
+          <div class="our-story-timeline-content">
+            <div class="our-story-timeline-year">1990</div>
+            <h3 class="text-2xl font-bold gold mb-2">Going Global</h3>
+            <p class="text-white/70">Entered international markets with exports to 15 countries. Established first overseas office in London.</p>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Global</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Exports</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 4 - 2005 -->
+        <div class="our-story-timeline-item our-story-fade-in our-story-delay-3">
+          <div class="our-story-timeline-dot"></div>
+          <div class="our-story-timeline-content">
+            <div class="our-story-timeline-year">2005</div>
+            <h3 class="text-2xl font-bold gold mb-2">Diversification</h3>
+            <p class="text-white/70">Entered metals, financial services, and telecom sectors. Became a true conglomerate.</p>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Metals</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Finance</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Telecom</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 5 - 2024 -->
+        <div class="our-story-timeline-item our-story-fade-in our-story-delay-4">
+          <div class="our-story-timeline-dot"></div>
+          <div class="our-story-timeline-content">
+            <div class="our-story-timeline-year">2024</div>
+            <h3 class="text-2xl font-bold gold mb-2">Global Leader</h3>
+            <p class="text-white/70">Present in 40+ countries with 50,000+ employees. Recognized as a force for good globally.</p>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Global</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Innovation</span>
+              <span class="text-xs bg-[#d4af37]/20 text-[#d4af37] px-2 py-1 rounded">Sustainability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones Section -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="gold text-sm tracking-[0.3em]">KEY ACHIEVEMENTS</span>
+        <h2 class="text-4xl md:text-5xl font-bold our-story-font-serif mt-4 text-white">
+          Defining <span class="gold">Milestones</span>
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Milestone 1 -->
+        <div class="our-story-milestone">
+          <div class="our-story-milestone-year">1985</div>
+          <h3 class="text-xl font-bold text-white mb-2">First International Office</h3>
+          <p class="text-white/60 text-sm">Opened in Singapore, marking our global footprint</p>
+        </div>
+        
+        <!-- Milestone 2 -->
+        <div class="our-story-milestone">
+          <div class="our-story-milestone-year">1995</div>
+          <h3 class="text-xl font-bold text-white mb-2">IPO & Listing</h3>
+          <p class="text-white/60 text-sm">Became a publicly traded company on BSE/NSE</p>
+        </div>
+        
+        <!-- Milestone 3 -->
+        <div class="our-story-milestone">
+          <div class="our-story-milestone-year">2008</div>
+          <h3 class="text-xl font-bold text-white mb-2">Fortune 500 Entry</h3>
+          <p class="text-white/60 text-sm">Ranked among world's largest corporations</p>
+        </div>
+        
+        <!-- Milestone 4 -->
+        <div class="our-story-milestone">
+          <div class="our-story-milestone-year">2015</div>
+          <h3 class="text-xl font-bold text-white mb-2">Carbon Neutral</h3>
+          <p class="text-white/60 text-sm">Achieved carbon neutrality across operations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-24 black-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="gold text-sm tracking-[0.3em]">OUR CORE VALUES</span>
+          <h2 class="text-4xl md:text-5xl font-bold our-story-font-serif mt-4 text-white">
+            Principles That <span class="gold">Guide Us</span>
+          </h2>
+          <p class="text-lg text-white/70 mt-6 leading-relaxed">
+            Our values aren't just words on paper - they're the foundation of every decision we make and every relationship we build.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-6 mt-12">
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl gold">✦</span>
+              <span class="text-white font-semibold">Integrity First</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl gold">✦</span>
+              <span class="text-white font-semibold">Customer Trust</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl gold">✦</span>
+              <span class="text-white font-semibold">Innovation</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl gold">✦</span>
+              <span class="text-white font-semibold">Sustainability</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl gold">✦</span>
+              <span class="text-white font-semibold">Excellence</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl gold">✦</span>
+              <span class="text-white font-semibold">Community</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-6">
+          <div class="our-story-value-card">
+            <div class="our-story-value-icon">🤝</div>
+            <h3 class="text-xl font-bold gold mb-2">Trust</h3>
+            <p class="text-sm text-white/60">Built over 75 years</p>
+          </div>
+          <div class="our-story-value-card">
+            <div class="our-story-value-icon">💡</div>
+            <h3 class="text-xl font-bold gold mb-2">Innovation</h3>
+            <p class="text-sm text-white/60">Always evolving</p>
+          </div>
+          <div class="our-story-value-card">
+            <div class="our-story-value-icon">🌍</div>
+            <h3 class="text-xl font-bold gold mb-2">Global</h3>
+            <p class="text-sm text-white/60">40+ countries</p>
+          </div>
+          <div class="our-story-value-card">
+            <div class="our-story-value-icon">❤️</div>
+            <h3 class="text-xl font-bold gold mb-2">Community</h3>
+            <p class="text-sm text-white/60">11M+ lives impacted</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div class="our-story-stat-card">
+          <div class="text-4xl md:text-5xl font-bold gold mb-2">75</div>
+          <div class="text-sm text-white/60">Years of Legacy</div>
+        </div>
+        <div class="our-story-stat-card">
+          <div class="text-4xl md:text-5xl font-bold gold mb-2">40+</div>
+          <div class="text-sm text-white/60">Countries</div>
+        </div>
+        <div class="our-story-stat-card">
+          <div class="text-4xl md:text-5xl font-bold gold mb-2">50K</div>
+          <div class="text-sm text-white/60">Employees</div>
+        </div>
+        <div class="our-story-stat-card">
+          <div class="text-4xl md:text-5xl font-bold gold mb-2">9K</div>
+          <div class="text-sm text-white/60">Villages Supported</div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#f5f5f5]">
+                Ready to Get <span class="gold">Started?</span>
+            </h2>
+            <p class="text-lg text-[#f5f5f5]/70 mt-6 max-w-2xl mx-auto">
+                Let's discuss how our services can help you achieve your business goals and create lasting value.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center mt-10">
+                <button
+                    class="gold-bg text-[#1a1a1b] px-10 py-4 font-bold tracking-wide hover:shadow-xl hover:shadow-[#d4af37]/20 transition-all duration-300 transform hover:scale-105">
+                    SCHEDULE CONSULTATION
+                </button>
+                <button
+                    class="border-2 border-[#d4af37] text-[#d4af37] px-10 py-4 font-bold tracking-wide hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all duration-300 transform hover:scale-105">
+                    CONTACT US
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1b] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 gold-bg flex items-center justify-center text-[#1a1a1b] font-bold">RLG
+                        </div>
+                        <span class="text-xl font-bold gold">ROYAL VALUE</span>
+                    </div>
+                    <p class="text-[#f5f5f5]/60 text-sm leading-relaxed">
+                        For over seven decades, we've built more than businesses — we've cultivated enduring
+                        relationships, empowered communities, and shaped industries.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            in</div>
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            X</div>
+                        <div
+                            class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition cursor-pointer">
+                            YT</div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Our Story</a></li>
+                        <li><a href="#" class="footer-link">Leadership</a></li>
+                        <li><a href="#" class="footer-link">Businesses</a></li>
+                        <li><a href="#" class="footer-link">Sustainability</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Media</a></li>
+                        <li><a href="#" class="footer-link">Podcasts</a></li>
+                        <li><a href="#" class="footer-link">Reports</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#d4af37] font-bold mb-4 text-lg">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Use</a></li>
+                        <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                        <li><a href="#" class="footer-link">Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="border-t border-[#d4af37]/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <div class="text-[#f5f5f5]/40 order-2 md:order-1">
+                    © 2025 Royal Value Group. All rights reserved.
+                </div>
+                <div class="flex space-x-6 order-1 md:order-2 mb-4 md:mb-0">
+                    <span class="text-[#f5f5f5]/40 text-xs">✦ FORGING EXCELLENCE</span>
+                    <span class="text-[#f5f5f5]/20">|</span>
+                    <span class="text-[#f5f5f5]/40 text-xs">✦ SINCE 1950</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
