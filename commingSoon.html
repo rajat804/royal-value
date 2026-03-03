@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: #002366;
@@ -24,24 +25,28 @@
       align-items: center;
       justify-content: center;
     }
-    
-    h1, h2, h3, h4, .coming-font-serif {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .coming-font-serif {
       font-family: 'Cormorant Garamond', serif;
     }
-    
+
     /* Coming Soon Gold Utilities */
     .coming-gold {
       color: #d4af37;
     }
-    
+
     .coming-gold-bg {
       background-color: #d4af37;
     }
-    
+
     .coming-gold-border {
       border-color: #d4af37;
     }
-    
+
     /* Main Container */
     .coming-container {
       position: relative;
@@ -54,18 +59,18 @@
       background: linear-gradient(135deg, #002366 0%, #001845 100%);
       padding: 2rem;
     }
-    
+
     .coming-pattern {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: 
+      background-image:
         repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.03) 0px, rgba(212, 175, 55, 0.03) 2px, transparent 2px, transparent 20px);
       pointer-events: none;
     }
-    
+
     /* Floating Icons */
     .coming-icon {
       position: absolute;
@@ -73,53 +78,65 @@
       color: rgba(212, 175, 55, 0.15);
       pointer-events: none;
     }
-    
+
     .coming-icon-1 {
       top: 10%;
       left: 5%;
       animation: comingFloat 8s ease-in-out infinite;
     }
-    
+
     .coming-icon-2 {
       top: 20%;
       right: 8%;
       animation: comingFloat 10s ease-in-out infinite reverse;
     }
-    
+
     .coming-icon-3 {
       bottom: 15%;
       left: 8%;
       animation: comingFloat 9s ease-in-out infinite 1s;
     }
-    
+
     .coming-icon-4 {
       bottom: 25%;
       right: 10%;
       animation: comingFloat 11s ease-in-out infinite 0.5s;
     }
-    
+
     .coming-icon-5 {
       top: 40%;
       left: 15%;
       animation: comingSpin 12s linear infinite;
     }
-    
+
     .coming-icon-6 {
       bottom: 35%;
       right: 15%;
       animation: comingSpin 15s linear infinite reverse;
     }
-    
+
     @keyframes comingFloat {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-30px) rotate(5deg); }
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-30px) rotate(5deg);
+      }
     }
-    
+
     @keyframes comingSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
-    
+
     /* Main Card */
     .coming-card {
       background: rgba(26, 26, 27, 0.85);
@@ -134,13 +151,13 @@
       box-shadow: 0 40px 60px -20px rgba(0, 0, 0, 0.6);
       transition: all 0.3s ease;
     }
-    
+
     .coming-card:hover {
       border-color: #d4af37;
       transform: scale(1.02);
       box-shadow: 0 50px 70px -20px rgba(212, 175, 55, 0.3);
     }
-    
+
     .coming-card-glow {
       position: absolute;
       top: -50%;
@@ -151,12 +168,17 @@
       animation: comingRotate 20s linear infinite;
       z-index: -1;
     }
-    
+
     @keyframes comingRotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
-    
+
     /* Logo */
     .coming-logo {
       display: flex;
@@ -165,7 +187,7 @@
       gap: 0.75rem;
       margin-bottom: 2rem;
     }
-    
+
     .coming-logo-icon {
       width: 50px;
       height: 50px;
@@ -178,14 +200,14 @@
       font-weight: bold;
       color: #1a1a1b;
     }
-    
+
     .coming-logo-text {
       font-size: 1.8rem;
       font-weight: bold;
       font-family: 'Cormorant Garamond', serif;
       color: #d4af37;
     }
-    
+
     /* Status Badge */
     .coming-status {
       display: inline-block;
@@ -199,12 +221,19 @@
       margin-bottom: 2rem;
       animation: comingPulse 2s ease-in-out infinite;
     }
-    
+
     @keyframes comingPulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
     }
-    
+
     /* Title */
     .coming-title {
       font-size: 3.5rem;
@@ -213,18 +242,18 @@
       line-height: 1.2;
       margin-bottom: 1rem;
     }
-    
+
     .coming-title-main {
       color: #f5f5f5;
     }
-    
+
     .coming-title-highlight {
       background: linear-gradient(135deg, #d4af37 0%, #f5e7b2 50%, #d4af37 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    
+
     /* Description */
     .coming-description {
       font-size: 1.1rem;
@@ -234,7 +263,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
+
     /* Progress Bar */
     .coming-progress-container {
       width: 100%;
@@ -244,7 +273,7 @@
       overflow: hidden;
       margin: 2rem 0;
     }
-    
+
     .coming-progress-bar {
       height: 100%;
       width: 0%;
@@ -252,13 +281,24 @@
       border-radius: 3px;
       animation: comingProgress 2.5s ease-in-out infinite;
     }
-    
+
     @keyframes comingProgress {
-      0% { width: 0%; margin-left: 0%; }
-      50% { width: 100%; margin-left: 0%; }
-      100% { width: 0%; margin-left: 100%; }
+      0% {
+        width: 0%;
+        margin-left: 0%;
+      }
+
+      50% {
+        width: 100%;
+        margin-left: 0%;
+      }
+
+      100% {
+        width: 0%;
+        margin-left: 100%;
+      }
     }
-    
+
     .coming-progress-text {
       display: flex;
       justify-content: space-between;
@@ -266,7 +306,7 @@
       color: rgba(245, 245, 245, 0.5);
       margin-top: 0.5rem;
     }
-    
+
     /* Tools */
     .coming-tools {
       display: flex;
@@ -274,7 +314,7 @@
       gap: 1.5rem;
       margin: 2rem 0;
     }
-    
+
     .coming-tool {
       width: 55px;
       height: 55px;
@@ -287,17 +327,35 @@
       font-size: 1.6rem;
       animation: comingBounce 2s ease-in-out infinite;
     }
-    
-    .coming-tool:nth-child(1) { animation-delay: 0s; }
-    .coming-tool:nth-child(2) { animation-delay: 0.2s; }
-    .coming-tool:nth-child(3) { animation-delay: 0.4s; }
-    .coming-tool:nth-child(4) { animation-delay: 0.6s; }
-    
-    @keyframes comingBounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-12px); }
+
+    .coming-tool:nth-child(1) {
+      animation-delay: 0s;
     }
-    
+
+    .coming-tool:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .coming-tool:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .coming-tool:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes comingBounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
     .coming-tool:hover {
       background: #d4af37;
       color: #1a1a1b;
@@ -305,7 +363,7 @@
       transition: all 0.3s ease;
       animation: none;
     }
-    
+
     /* Countdown */
     .coming-countdown {
       display: flex;
@@ -313,12 +371,12 @@
       gap: 2rem;
       margin: 2rem 0;
     }
-    
+
     .coming-countdown-item {
       text-align: center;
       min-width: 70px;
     }
-    
+
     .coming-countdown-number {
       font-size: 2.8rem;
       font-weight: bold;
@@ -327,7 +385,7 @@
       line-height: 1;
       text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     }
-    
+
     .coming-countdown-label {
       font-size: 0.75rem;
       text-transform: uppercase;
@@ -335,14 +393,14 @@
       color: rgba(245, 245, 245, 0.5);
       margin-top: 0.25rem;
     }
-    
+
     /* Notify Form */
     .coming-form {
       display: flex;
       max-width: 450px;
       margin: 2rem auto 0;
     }
-    
+
     .coming-input {
       flex: 1;
       padding: 0.9rem 1.5rem;
@@ -355,16 +413,16 @@
       transition: all 0.3s ease;
       font-size: 0.95rem;
     }
-    
+
     .coming-input:focus {
       border-color: #d4af37;
       background: rgba(26, 26, 27, 0.9);
     }
-    
+
     .coming-input::placeholder {
       color: rgba(245, 245, 245, 0.4);
     }
-    
+
     .coming-button {
       padding: 0.9rem 2rem;
       background: #d4af37;
@@ -377,19 +435,19 @@
       transition: all 0.3s ease;
       white-space: nowrap;
     }
-    
+
     .coming-button:hover {
       background: transparent;
       color: #d4af37;
     }
-    
+
     /* Note */
     .coming-note {
       font-size: 0.8rem;
       color: rgba(245, 245, 245, 0.3);
       margin-top: 1.5rem;
     }
-    
+
     /* Decorative Elements */
     .coming-decoration {
       position: absolute;
@@ -399,7 +457,7 @@
       border-radius: 50%;
       z-index: 5;
     }
-    
+
     .coming-decoration-1 {
       top: 10%;
       left: 5%;
@@ -407,7 +465,7 @@
       height: 200px;
       border-color: rgba(212, 175, 55, 0.05);
     }
-    
+
     .coming-decoration-2 {
       bottom: 5%;
       right: 5%;
@@ -415,60 +473,61 @@
       height: 250px;
       border-color: rgba(212, 175, 55, 0.05);
     }
-    
+
     /* Responsive */
     @media (max-width: 640px) {
       .coming-card {
         padding: 2rem;
       }
-      
+
       .coming-title {
         font-size: 2.5rem;
       }
-      
+
       .coming-countdown {
         gap: 1rem;
         flex-wrap: wrap;
       }
-      
+
       .coming-countdown-item {
         min-width: 60px;
       }
-      
+
       .coming-countdown-number {
         font-size: 2rem;
       }
-      
+
       .coming-tools {
         gap: 1rem;
         flex-wrap: wrap;
       }
-      
+
       .coming-form {
         flex-direction: column;
         gap: 1rem;
       }
-      
+
       .coming-input {
         border-radius: 50px;
         border-right: 2px solid rgba(212, 175, 55, 0.3);
       }
-      
+
       .coming-button {
         border-radius: 50px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="coming-container">
     <!-- Background Pattern -->
     <div class="coming-pattern"></div>
-    
+
     <!-- Decorative Circles -->
     <div class="coming-decoration coming-decoration-1"></div>
     <div class="coming-decoration coming-decoration-2"></div>
-    
+
     <!-- Floating Icons -->
     <div class="coming-icon coming-icon-1">🔨</div>
     <div class="coming-icon coming-icon-2">🔧</div>
@@ -476,34 +535,34 @@
     <div class="coming-icon coming-icon-4">📐</div>
     <div class="coming-icon coming-icon-5">🏗️</div>
     <div class="coming-icon coming-icon-6">✨</div>
-    
+
     <!-- Main Card -->
     <div class="coming-card">
       <div class="coming-card-glow"></div>
-      
+
       <!-- Logo -->
       <div class="coming-logo">
         <div class="coming-logo-icon">RV</div>
         <div class="coming-logo-text">ROYAL VALUE</div>
       </div>
-      
+
       <!-- Status Badge -->
       <div class="text-center">
         <span class="coming-status">🚧 COMING SOON 🚧</span>
       </div>
-      
+
       <!-- Title -->
       <h1 class="coming-title text-center">
         <span class="coming-title-main">Something</span><br>
         <span class="coming-title-highlight">Extraordinary</span><br>
         <span class="coming-title-main">is Coming</span>
       </h1>
-      
+
       <!-- Description -->
       <p class="coming-description text-center">
         We're crafting something special for you. Stay tuned for an amazing experience from Royal Value.
       </p>
-      
+
       <!-- Progress Bar -->
       <div class="coming-progress-container">
         <div class="coming-progress-bar"></div>
@@ -512,7 +571,7 @@
         <span>Building</span>
         <span>75% Complete</span>
       </div>
-      
+
       <!-- Construction Tools -->
       <div class="coming-tools">
         <div class="coming-tool">🔨</div>
@@ -522,16 +581,12 @@
       </div>
       <!-- Notify Form -->
       <div class="coming-form">
-        <input 
-          type="email" 
-          placeholder="Enter your email for updates" 
-          class="coming-input"
-        >
+        <input type="email" placeholder="Enter your email for updates" class="coming-input">
         <button class="coming-button">
           NOTIFY ME
         </button>
       </div>
-      
+
       <!-- Note -->
       <div class="coming-note text-center">
         ✦ We'll let you know when we launch ✦
@@ -539,4 +594,5 @@
     </div>
   </div>
 </body>
+
 </html>
