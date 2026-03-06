@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media | Royal Value</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+  </style>
+</head>
+<body class="bg-[#002366] text-[#f5f5f5] min-h-screen flex items-center justify-center p-4 md:p-8">
+  
+  <!-- Main Container -->
+  <div class="max-w-7xl w-full mx-auto">
+    
+    <!-- Header Section -->
+    <div class="text-center mb-8 md:mb-12">
+      <div class="inline-flex items-center gap-2 text-xs md:text-sm tracking-[0.2em] uppercase text-[#d4af37] bg-[#d4af37]/10 px-4 py-2 rounded-full border border-[#d4af37]/30 mb-4">
+        <i class="fas fa-newspaper"></i> Media & News
+      </div>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-white mb-4">
+        Latest <span class="text-[#d4af37] relative inline-block">Updates
+          <span class="absolute bottom-1 left-0 w-full h-2 bg-[#d4af37]/20 -z-10 rounded"></span>
+        </span>
+      </h1>
+      <p class="text-sm md:text-base text-white/80 max-w-2xl mx-auto">
+        Stay connected with Royal Value's latest news, press releases, and media coverage.
+      </p>
+    </div>
+    
+    <!-- Featured News -->
+    <div class="mb-8 md:mb-12">
+      <div class="bg-gradient-to-br from-[#1a1a1b] to-[#002366] rounded-2xl md:rounded-3xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] transition-all duration-300 group">
+        <div class="grid md:grid-cols-2 gap-0">
+          <!-- Featured Image -->
+          <div class="bg-[#d4af37]/10 p-8 md:p-12 flex items-center justify-center">
+            <i class="fas fa-crown text-7xl md:text-8xl lg:text-9xl text-[#d4af37] opacity-80 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"></i>
+          </div>
+          <!-- Featured Content -->
+          <div class="p-6 md:p-8 lg:p-10 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-3 py-1 rounded-full border border-[#d4af37]/30">
+                <i class="fas fa-star mr-1"></i> FEATURED
+              </span>
+              <span class="text-xs text-white/40">5 min read</span>
+            </div>
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold font-serif text-white mb-3 group-hover:text-[#d4af37] transition-colors">
+              Royal Value Announces ₹500Cr Investment in Green Technology
+            </h2>
+            <p class="text-sm md:text-base text-white/70 mb-4">
+              Leading the way in sustainable innovation, Royal Value commits to developing eco-friendly solutions across all business verticals.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-[#d4af37]/20 rounded-full flex items-center justify-center text-[#d4af37]">
+                  <i class="fas fa-calendar-alt text-xs"></i>
+                </div>
+                <span class="text-xs text-white/60">March 6, 2026</span>
+              </div>
+              <button class="text-[#d4af37] text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10">
+      <button class="px-4 md:px-6 py-2 text-xs md:text-sm bg-[#d4af37] text-[#1a1a1b] rounded-full font-semibold border-2 border-[#d4af37] hover:bg-transparent hover:text-[#d4af37] transition-all">
+        All News
+      </button>
+      <button class="px-4 md:px-6 py-2 text-xs md:text-sm bg-transparent text-white/80 rounded-full font-semibold border border-[#d4af37]/30 hover:border-[#d4af37] hover:text-[#d4af37] transition-all">
+        Press Releases
+      </button>
+      <button class="px-4 md:px-6 py-2 text-xs md:text-sm bg-transparent text-white/80 rounded-full font-semibold border border-[#d4af37]/30 hover:border-[#d4af37] hover:text-[#d4af37] transition-all">
+        Media Coverage
+      </button>
+      <button class="px-4 md:px-6 py-2 text-xs md:text-sm bg-transparent text-white/80 rounded-full font-semibold border border-[#d4af37]/30 hover:border-[#d4af37] hover:text-[#d4af37] transition-all">
+        Events
+      </button>
+      <button class="px-4 md:px-6 py-2 text-xs md:text-sm bg-transparent text-white/80 rounded-full font-semibold border border-[#d4af37]/30 hover:border-[#d4af37] hover:text-[#d4af37] transition-all">
+        Podcasts
+      </button>
+    </div>
+    
+    <!-- News Grid - 1 2 3 columns -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 mb-8 md:mb-12">
+      
+      <!-- News Card 1 -->
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-[#d4af37]/20 transition-all duration-300 group">
+        <div class="h-40 md:h-48 bg-[#d4af37]/10 flex items-center justify-center">
+          <i class="fas fa-chart-line text-4xl md:text-5xl text-[#d4af37] opacity-60 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"></i>
+        </div>
+        <div class="p-4 md:p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] md:text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded-full border border-[#d4af37]/30">
+              Press Release
+            </span>
+            <span class="text-[10px] md:text-xs text-white/40">2 days ago</span>
+          </div>
+          <h3 class="text-base md:text-lg font-bold font-serif text-white mb-2 group-hover:text-[#d4af37] transition-colors">
+            Royal Value Reports 25% Growth in Q3 2026
+          </h3>
+          <p class="text-xs md:text-sm text-white/70 mb-3">
+            Strong performance across all business verticals with record-breaking quarterly results.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i class="fas fa-eye text-[10px] text-[#d4af37]"></i>
+              <span class="text-[10px] text-white/40">1.2k reads</span>
+            </div>
+            <button class="text-[#d4af37] text-xs font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              Read <i class="fas fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- News Card 2 -->
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-[#d4af37]/20 transition-all duration-300 group">
+        <div class="h-40 md:h-48 bg-[#d4af37]/10 flex items-center justify-center">
+          <i class="fas fa-microphone-alt text-4xl md:text-5xl text-[#d4af37] opacity-60 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"></i>
+        </div>
+        <div class="p-4 md:p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] md:text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded-full border border-[#d4af37]/30">
+              Podcast
+            </span>
+            <span class="text-[10px] md:text-xs text-white/40">1 week ago</span>
+          </div>
+          <h3 class="text-base md:text-lg font-bold font-serif text-white mb-2 group-hover:text-[#d4af37] transition-colors">
+            The Future of Sustainable Business with Royal Value CEO
+          </h3>
+          <p class="text-xs md:text-sm text-white/70 mb-3">
+            Exclusive interview discussing sustainability goals and innovation strategy.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i class="fas fa-headphones text-[10px] text-[#d4af37]"></i>
+              <span class="text-[10px] text-white/40">3.4k listens</span>
+            </div>
+            <button class="text-[#d4af37] text-xs font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              Listen <i class="fas fa-play text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- News Card 3 -->
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-[#d4af37]/20 transition-all duration-300 group">
+        <div class="h-40 md:h-48 bg-[#d4af37]/10 flex items-center justify-center">
+          <i class="fas fa-trophy text-4xl md:text-5xl text-[#d4af37] opacity-60 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"></i>
+        </div>
+        <div class="p-4 md:p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] md:text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded-full border border-[#d4af37]/30">
+              Award
+            </span>
+            <span class="text-[10px] md:text-xs text-white/40">2 weeks ago</span>
+          </div>
+          <h3 class="text-base md:text-lg font-bold font-serif text-white mb-2 group-hover:text-[#d4af37] transition-colors">
+            Royal Value Wins 'Best Sustainable Business' Award 2026
+          </h3>
+          <p class="text-xs md:text-sm text-white/70 mb-3">
+            Recognized for outstanding contribution to environmental sustainability.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i class="fas fa-star text-[10px] text-[#d4af37]"></i>
+              <span class="text-[10px] text-white/40">Industry Honor</span>
+            </div>
+            <button class="text-[#d4af37] text-xs font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              Read <i class="fas fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- News Card 4 -->
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-[#d4af37]/20 transition-all duration-300 group">
+        <div class="h-40 md:h-48 bg-[#d4af37]/10 flex items-center justify-center">
+          <i class="fas fa-handshake text-4xl md:text-5xl text-[#d4af37] opacity-60 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"></i>
+        </div>
+        <div class="p-4 md:p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] md:text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded-full border border-[#d4af37]/30">
+              Partnership
+            </span>
+            <span class="text-[10px] md:text-xs text-white/40">3 weeks ago</span>
+          </div>
+          <h3 class="text-base md:text-lg font-bold font-serif text-white mb-2 group-hover:text-[#d4af37] transition-colors">
+            Strategic Partnership with Global Tech Leader Announced
+          </h3>
+          <p class="text-xs md:text-sm text-white/70 mb-3">
+            Collaboration to drive digital transformation across industries.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i class="fas fa-newspaper text-[10px] text-[#d4af37]"></i>
+              <span class="text-[10px] text-white/40">Press Release</span>
+            </div>
+            <button class="text-[#d4af37] text-xs font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              Read <i class="fas fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- News Card 5 -->
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-[#d4af37]/20 transition-all duration-300 group">
+        <div class="h-40 md:h-48 bg-[#d4af37]/10 flex items-center justify-center">
+          <i class="fas fa-video text-4xl md:text-5xl text-[#d4af37] opacity-60 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"></i>
+        </div>
+        <div class="p-4 md:p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] md:text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded-full border border-[#d4af37]/30">
+              Event
+            </span>
+            <span class="text-[10px] md:text-xs text-white/40">1 month ago</span>
+          </div>
+          <h3 class="text-base md:text-lg font-bold font-serif text-white mb-2 group-hover:text-[#d4af37] transition-colors">
+            Royal Value Annual Leadership Summit 2026 Highlights
+          </h3>
+          <p class="text-xs md:text-sm text-white/70 mb-3">
+            Industry leaders gather to discuss future of business and innovation.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i class="fas fa-users text-[10px] text-[#d4af37]"></i>
+              <span class="text-[10px] text-white/40">500+ attendees</span>
+            </div>
+            <button class="text-[#d4af37] text-xs font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              Watch <i class="fas fa-play text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- News Card 6 -->
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-[#d4af37]/20 transition-all duration-300 group">
+        <div class="h-40 md:h-48 bg-[#d4af37]/10 flex items-center justify-center">
+          <i class="fas fa-seedling text-4xl md:text-5xl text-[#d4af37] opacity-60 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"></i>
+        </div>
+        <div class="p-4 md:p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] md:text-xs font-semibold text-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded-full border border-[#d4af37]/30">
+              Initiative
+            </span>
+            <span class="text-[10px] md:text-xs text-white/40">2 months ago</span>
+          </div>
+          <h3 class="text-base md:text-lg font-bold font-serif text-white mb-2 group-hover:text-[#d4af37] transition-colors">
+            Royal Value Launches 'Green Future' Initiative
+          </h3>
+          <p class="text-xs md:text-sm text-white/70 mb-3">
+            Planting 1 million trees across 10 states in India.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i class="fas fa-tree text-[10px] text-[#d4af37]"></i>
+              <span class="text-[10px] text-white/40">200k planted</span>
+            </div>
+            <button class="text-[#d4af37] text-xs font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              Read <i class="fas fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Podcasts Section -->
+    <div class="mb-8 md:mb-12">
+      <div class="flex items-center justify-between mb-4 md:mb-6">
+        <h2 class="text-xl md:text-2xl font-bold font-serif text-white">
+          <span class="text-[#d4af37]">Popular</span> Podcasts
+        </h2>
+        <button class="text-[#d4af37] text-xs md:text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+          View All <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+        
+        <!-- Podcast 1 -->
+        <div class="bg-[#1a1a1b] rounded-xl p-3 md:p-4 flex items-center gap-3 border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-3px] transition-all duration-300 group">
+          <div class="w-12 h-12 md:w-14 md:h-14 bg-[#d4af37]/10 rounded-lg flex items-center justify-center text-[#d4af37] group-hover:bg-[#d4af37] group-hover:text-[#1a1a1b] transition-all duration-300">
+            <i class="fas fa-podcast text-xl md:text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm md:text-base font-bold text-white group-hover:text-[#d4af37] transition-colors">
+              Future of Finance with Royal Value
+            </h3>
+            <p class="text-xs text-white/60">45 min • 2 days ago</p>
+          </div>
+          <button class="w-8 h-8 rounded-full border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all">
+            <i class="fas fa-play text-xs"></i>
+          </button>
+        </div>
+        
+        <!-- Podcast 2 -->
+        <div class="bg-[#1a1a1b] rounded-xl p-3 md:p-4 flex items-center gap-3 border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-3px] transition-all duration-300 group">
+          <div class="w-12 h-12 md:w-14 md:h-14 bg-[#d4af37]/10 rounded-lg flex items-center justify-center text-[#d4af37] group-hover:bg-[#d4af37] group-hover:text-[#1a1a1b] transition-all duration-300">
+            <i class="fas fa-podcast text-xl md:text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm md:text-base font-bold text-white group-hover:text-[#d4af37] transition-colors">
+              Sustainability Stories: Green Innovation
+            </h3>
+            <p class="text-xs text-white/60">38 min • 5 days ago</p>
+          </div>
+          <button class="w-8 h-8 rounded-full border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:bg-[#d4af37] hover:text-[#1a1a1b] transition-all">
+            <i class="fas fa-play text-xs"></i>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Press Releases List -->
+    <div class="mb-8 md:mb-12">
+      <div class="flex items-center justify-between mb-4 md:mb-6">
+        <h2 class="text-xl md:text-2xl font-bold font-serif text-white">
+          Latest <span class="text-[#d4af37]">Press Releases</span>
+        </h2>
+        <button class="text-[#d4af37] text-xs md:text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+          All Releases <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      
+      <div class="bg-[#1a1a1b] rounded-xl md:rounded-2xl divide-y divide-[#d4af37]/10 border border-[#d4af37]/20">
+        
+        <!-- Release 1 -->
+        <div class="p-4 md:p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-[#d4af37]/5 transition-colors">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 bg-[#d4af37]/10 rounded-full flex items-center justify-center text-[#d4af37] flex-shrink-0 mt-1">
+              <i class="fas fa-file-alt text-xs"></i>
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-white mb-1">
+                Royal Value Expands Operations to Southeast Asia
+              </h3>
+              <div class="flex items-center gap-3 text-xs text-white/40">
+                <span><i class="far fa-calendar mr-1"></i> March 5, 2026</span>
+                <span><i class="far fa-clock mr-1"></i> 10:30 AM</span>
+              </div>
+            </div>
+          </div>
+          <button class="text-[#d4af37] text-sm font-semibold flex items-center gap-2 self-end md:self-auto hover:gap-3 transition-all">
+            Download <i class="fas fa-download text-xs"></i>
+          </button>
+        </div>
+        
+        <!-- Release 2 -->
+        <div class="p-4 md:p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-[#d4af37]/5 transition-colors">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 bg-[#d4af37]/10 rounded-full flex items-center justify-center text-[#d4af37] flex-shrink-0 mt-1">
+              <i class="fas fa-file-alt text-xs"></i>
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-white mb-1">
+                Royal Value Foundation Announces ₹50Cr for Education
+              </h3>
+              <div class="flex items-center gap-3 text-xs text-white/40">
+                <span><i class="far fa-calendar mr-1"></i> March 3, 2026</span>
+                <span><i class="far fa-clock mr-1"></i> 2:15 PM</span>
+              </div>
+            </div>
+          </div>
+          <button class="text-[#d4af37] text-sm font-semibold flex items-center gap-2 self-end md:self-auto hover:gap-3 transition-all">
+            Download <i class="fas fa-download text-xs"></i>
+          </button>
+        </div>
+        
+        <!-- Release 3 -->
+        <div class="p-4 md:p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-[#d4af37]/5 transition-colors">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 bg-[#d4af37]/10 rounded-full flex items-center justify-center text-[#d4af37] flex-shrink-0 mt-1">
+              <i class="fas fa-file-alt text-xs"></i>
+            </div>
+            <div>
+              <h3 class="text-sm md:text-base font-semibold text-white mb-1">
+                Quarterly Results: Royal Value Reports Strong Growth
+              </h3>
+              <div class="flex items-center gap-3 text-xs text-white/40">
+                <span><i class="far fa-calendar mr-1"></i> March 1, 2026</span>
+                <span><i class="far fa-clock mr-1"></i> 9:00 AM</span>
+              </div>
+            </div>
+          </div>
+          <button class="text-[#d4af37] text-sm font-semibold flex items-center gap-2 self-end md:self-auto hover:gap-3 transition-all">
+            Download <i class="fas fa-download text-xs"></i>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Media Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-12">
+      
+      <div class="bg-[#1a1a1b] rounded-xl p-4 text-center border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-3px] transition-all duration-300">
+        <div class="text-2xl md:text-3xl text-[#d4af37] mb-1">
+          <i class="fas fa-newspaper"></i>
+        </div>
+        <div class="text-xl md:text-2xl font-bold font-serif text-white">150+</div>
+        <div class="text-xs text-white/60">Articles</div>
+      </div>
+      
+      <div class="bg-[#1a1a1b] rounded-xl p-4 text-center border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-3px] transition-all duration-300">
+        <div class="text-2xl md:text-3xl text-[#d4af37] mb-1">
+          <i class="fas fa-podcast"></i>
+        </div>
+        <div class="text-xl md:text-2xl font-bold font-serif text-white">45+</div>
+        <div class="text-xs text-white/60">Podcasts</div>
+      </div>
+      
+      <div class="bg-[#1a1a1b] rounded-xl p-4 text-center border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-3px] transition-all duration-300">
+        <div class="text-2xl md:text-3xl text-[#d4af37] mb-1">
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="text-xl md:text-2xl font-bold font-serif text-white">80+</div>
+        <div class="text-xs text-white/60">Videos</div>
+      </div>
+      
+      <div class="bg-[#1a1a1b] rounded-xl p-4 text-center border border-[#d4af37]/20 hover:border-[#d4af37] hover:translate-y-[-3px] transition-all duration-300">
+        <div class="text-2xl md:text-3xl text-[#d4af37] mb-1">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="text-xl md:text-2xl font-bold font-serif text-white">25+</div>
+        <div class="text-xs text-white/60">Events</div>
+      </div>
+      
+    </div>
+    
+    <!-- Newsletter CTA -->
+    <div class="bg-gradient-to-br from-[#1a1a1b] to-[#002366] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-10 text-center relative overflow-hidden border border-[#d4af37]/30">
+      <div class="absolute bottom-0 left-0 text-8xl opacity-5 rotate-12">📰</div>
+      <div class="absolute top-0 right-0 text-8xl opacity-5 -rotate-12">📬</div>
+      
+      <h2 class="text-xl md:text-2xl lg:text-3xl font-bold font-serif text-white mb-2 relative z-10">
+        Stay <span class="text-[#d4af37]">Updated</span>
+      </h2>
+      <p class="text-sm md:text-base text-white/80 max-w-2xl mx-auto mb-5 md:mb-6 relative z-10">
+        Subscribe to our newsletter for the latest news and updates.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto relative z-10">
+        <input type="email" placeholder="Your email address" 
+          class="flex-1 px-4 py-3 bg-[#1a1a1b] border border-[#d4af37]/30 rounded-full text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#d4af37] transition-all">
+        <button class="px-6 py-3 bg-[#d4af37] text-[#1a1a1b] rounded-full font-semibold text-sm hover:bg-transparent hover:text-[#d4af37] border-2 border-[#d4af37] transition-all duration-300">
+          Subscribe
+        </button>
+      </div>
+      
+      <p class="text-xs text-white/40 mt-4 relative z-10">
+        <i class="fas fa-shield-alt text-[#d4af37] mr-1"></i> No spam, unsubscribe anytime.
+      </p>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
